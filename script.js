@@ -5,7 +5,7 @@ document.getElementById('surveyForm').addEventListener('submit', async (event) =
     const formData = new FormData(form);
 
     try {
-        const response = await fetch('http://localhost:3000/upload', { // Замените на ваш ngrok URL при необходимости
+        const response = await fetch('https://4395-37-151-129-32.ngrok-free.app/upload', { // Убедитесь, что вы используете правильный URL ngrok
             method: 'POST',
             body: formData
         });
