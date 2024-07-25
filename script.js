@@ -5,7 +5,7 @@ document.getElementById('surveyForm').addEventListener('submit', async (event) =
     const formData = new FormData(form);
 
     try {
-        const response = await fetch('https://4395-37-151-129-32.ngrok-free.app', { // Используйте ваш ngrok URL
+        const response = await fetch('http://localhost:3000/upload', { // Замените на ваш ngrok URL при необходимости
             method: 'POST',
             body: formData
         });
@@ -20,10 +20,4 @@ document.getElementById('surveyForm').addEventListener('submit', async (event) =
         console.error('Error:', error);
         alert('Ошибка при отправке формы');
     }
-    fetch('https://your-server-url.com/submit', {
-    method: 'POST',
-    body: formData
-})
-
 });
-
