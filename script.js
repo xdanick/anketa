@@ -5,7 +5,7 @@ document.getElementById('surveyForm').addEventListener('submit', async (event) =
     const formData = new FormData(form);
 
     try {
-        const response = await fetch('https://340e-37-151-129-32.ngrok-free.app', { // Используйте ваш ngrok URL
+        const response = await fetch('https://4395-37-151-129-32.ngrok-free.app', { // Используйте ваш ngrok URL
             method: 'POST',
             body: formData
         });
