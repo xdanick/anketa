@@ -20,4 +20,10 @@ document.getElementById('surveyForm').addEventListener('submit', async (event) =
         console.error('Error:', error);
         alert('Ошибка при отправке формы');
     }
+    fetch('https://your-server-url.com/submit', {
+    method: 'POST',
+    body: formData
+})
+
 });
+
